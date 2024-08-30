@@ -29,33 +29,4 @@ header .container {
     padding: 0 20px;
 }
 
-header .logo h1 {
-    margin: 0;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-}
-
-header nav ul li {
-    margin-left: 20px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.banner {
-    margin-top: 60px;
-    text-align: center;
-}
-
-.banner img {
-    width: 100%;
-    height: auto;
-}
-
-main {
-    padding:
+header .logo h
