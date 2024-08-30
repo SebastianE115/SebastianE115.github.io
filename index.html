@@ -3,55 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sebastian's Portfolio</title>
+    <title>Metric Engineering</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Metric Engineering</h1>
+            <div class="logo">
+                <h1>Metric Engineering</h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
+    
     <main>
-        <section id="home">
-            <h2>Welcome to Metric Engineering</h2>
-            <p>Your trusted partner in engineering solutions.</p>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Innovative Engineering Solutions</h2>
+                <p>Delivering excellence in engineering design and consulting.</p>
+            </div>
         </section>
-
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Information about the company.</p>
+        
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-item">
+                    <h3>Engineering Consulting</h3>
+                    <p>Expert advice and guidance in various engineering fields.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Project Management</h3>
+                    <p>Efficient management of engineering projects from start to finish.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Design & Development</h3>
+                    <p>Creative and effective design solutions for engineering challenges.</p>
+                </div>
+            </div>
         </section>
-
-        <section id="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Service 1</li>
-                <li>Service 2</li>
-                <li>Service 3</li>
-            </ul>
+        
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Our Projects</h2>
+                <div class="project-item">
+                    <img src="project1.jpg" alt="Project 1">
+                    <p>Project 1 Description</p>
+                </div>
+                <div class="project-item">
+                    <img src="project2.jpg" alt="Project 2">
+                    <p>Project 2 Description</p>
+                </div>
+                <div class="project-item">
+                    <img src="project3.jpg" alt="Project 3">
+                    <p>Project 3 Description</p>
+                </div>
+            </div>
         </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:info@metriceng.com">info@metriceng.com</a></p>
-            <p>Phone: +1 234 567 890</p>
+        
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
-
+    
     <footer>
         <div class="container">
             <p>&copy; 2024 Metric Engineering. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
