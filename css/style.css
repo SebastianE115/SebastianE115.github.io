@@ -1,32 +1,158 @@
-/* Reset some default styles */
-* {
+/* General Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #f5f5f5;
+    background-color: #333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+header, footer {
+    background: #222;
+    color: #c0c0c0;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #6d6d6d;
+    border-top: 3px solid #6d6d6d;
 }
 
-header {
-    background: #004d99;
-    color: #fff;
-    padding: 10px 0;
-    position: fixed;
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #d4af37;
+    margin: 0;
+}
+
+a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+}
+
+/* Header Styles */
+header .logo {
+    float: left;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    padding: 5px 10px;
+    background: #6d6d6d;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background: #d4af37;
+    color: #222;
+}
+
+/* Grid Layout */
+main {
+    padding: 20px;
+}
+
+.grid-item {
+    background: #444;
+    border: 2px solid #6d6d6d;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.grid-item:nth-of-type(odd) {
+    background: #555;
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    text-align: center;
+    color: #f5f5f5;
+    margin-bottom: 20px;
+}
+
+.banner img {
     width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    height: auto;
+    opacity: 0.8;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+.banner h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
 }
 
-header .logo h
+/* Project Links */
+.project-links {
+    list-style: none;
+    padding: 0;
+}
+
+.project-links li {
+    margin: 5px 0;
+}
+
+.project-links li a {
+    display: block;
+    padding: 10px;
+    background: #6d6d6d;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.project-links li a:hover {
+    background: #d4af37;
+    color: #222;
+}
+
+/* Footer Styles */
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Grid */
+@media (min-width: 600px) {
+    .grid-item {
+        display: inline-block;
+        width: 45%;
+    }
+}
+
+@media (min-width: 900px) {
+    .grid-item {
+        width: 30%;
+    }
+}
