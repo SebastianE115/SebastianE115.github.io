@@ -181,3 +181,7 @@ footer p {
     font-size: 0.9em;
     line-height: 1.6;
 }
+
+.logophoto img{
+    max-width: 60%;
+}
